@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+          #nav{
+            display: flex;
+            background-color: black;
+            
+            width: 100%;
+            height: 70px;
+            text-align: center;
+            align-items: center;
+            justify-content:center ;
+            position: fixed;
+          }
+          a{
+            text-decoration: none;
+           
+            margin: 50px auto;
+            color: antiquewhite;
+          }
+         
+          #div1{
+              display: grid;
+              grid-template-columns: 800px 500px;
+              background-image: url(https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021/07/CSS-background-gradient-featured.jpg);
+              width: 100%;
+              height: 800px;
+              background-position-y: bottom;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-color: rgba(0px, 0px,0px , 0.5);
+          }
+          span{
+              display: grid;
+              grid-template-columns: 100%;
+              width: 200px;
+             }
+             p{
+                 font-size: 20px;
+                 font-weight: bolder;
+                 font-family: cursive;
+             }
+          img{
+             margin: 250px auto;
+             border-radius: 20px;
+          
+          }
+          #div2{
+           margin-top: 200px;
+          }
+          .button1{
+              padding: 10px;
+              margin-top: 20px;
+              border: 2px solid whitesmoke;
+              box-shadow: 0px 0px 5px;
+          }
+
+          /*container list*/
+            
+          #containerlist{
+            background-image:url(https://cdn.wallpapersafari.com/80/31/8uLjyU.jpg);
+          background-repeat: no-repeat;
+          background-position-y: bottom;
+          background-size: contain;
+          height: 800px;
+              width: 100%;
+        }
+          #mainu{
+              display: flex;
+              flex-direction: row;
+              height: 1500px;
+              width: 100%;
+              justify-content: space-around;
+           margin-top: 100px;
+           
+             
+             
+          }
+          #containerlist1{
+              
+              width: 300px;
+              height: 300px;
+             margin-top: 10px;
+              border: 2px solid black;
+              background-color: aqua;
+              
+          }
+          #containerlist2 {
+              
+              width: 300px;
+              height: 300px;
+              margin-top: 10px;
+              border: 2px solid black;
+              background-color: aqua;
+              justify-content: center;
+
+          }
+          #containerlist3 {
+              
+              width: 300px;
+              height: 300px;
+              margin-top: 10px;
+              border: 2px solid black;
+              background-color: aqua;
+          }
+          #learning{
+              display: flex;
+              background-color: burlywood;
+              color: black;
+              justify-content: center;
+              align-items: center;
+              height: 100px;
+          }
+
+          /*Registration Form */
+
+          #registration{
+              display: flex;
+              background-image: url(https://blog.prezi.com/wp-content/uploads/2019/03/jason-leung-479251-unsplash.jpg);
+              width: 100%;
+              height: 800px;
+              background-position-y: bottom;
+              background-repeat: no-repeat;
+              background-size: cover;
+          }
+          .registration{
+              border: 2px solid black;
+              height: 500px;
+              background-color: palevioletred;
+             margin: 140px auto;
+          }
+          #btn{
+              padding: 20px;
+              background-color: red;
+              color: black;
+              border-radius: 20px;
+            margin-left: 100px;
+            margin-top: 10px;
+          }
+
+          /*About Section*/
+          #About{
+              display: flex;
+              flex-direction: column;
+              background-color: black;
+              color: aliceblue;
+              width: 100%;
+              height: 300px;
+           
+
+          }
+          .about1{
+             text-align: center;
+             margin-top: 20px;
+        
+          }
+          .about2{
+             text-align: center;
+        
+          }
+          .about3{
+             text-align: center;
+        
+          }
+
+    </style>
+
+   
+</head>
+<body>
+    <nav id="nav">
+        <a href="#">Home</a>
+        <a href="#">Contacts</a>
+        <a href="#">Help</a>
+        <a href="#">Setting</a>
+    </nav>
+    <main>
+        <div id="container1">
+           <div id="div1">
+            <img src="data:image/jpeg;base64,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"
+             />
+          
+           <div id="div2">
+            <p>Navrottam Wagh
+            <span>I'am Software Engineer</span>
+           <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, porro.</span>
+            </p>
+            <button class="button1">More about me</button>
+           </div>
+           </div>
+            
+        </div>
+        <!--Course Details-->
+        <div id="containerlist">
+            <h1 id="learning">Completet Course Details</h1>
+            <main id="mainu">
+                <div id="containerlist1">
+                    <h2 align="center">HTML, CSS, JS</h2>
+                    <ul type="none">
+                        <li>Getting Familiar with web</li>
+                        <li>Understanding HTML concepts</li>
+                        <li> Learning HTML elements,table,images and other building blocks</li>
+                        <li>Basic forms</li>
+                        <li>Understanding styling using CSS</li>
+                        <li>Learning CSS properties</li>
+                        <li>Responsive designing with bootstrap</li>
+                    </ul>
+                </div>
+                <div id="containerlist2">
+                    <h2 align="center">Java + DSA</h2>
+                    <ul type="none">
+                        <li>Understanding data types & variables</li>
+                        <li>Control flows and loops</li>
+                        <li>Methods</li>
+                        <li>Conditions and control flows</li>
+                        <li>Arrays & 2D arrays</li>
+                        <li>String</li>
+                    </ul>
+                </div>
+                <div id="containerlist3">
+                    <h2 align="center">Core CS concepts</h2>
+                    <ul type="none">
+                        <li>Aptitude</li>
+                        <li>Database</li>
+                        <li>OS</li>
+                        <li>Networks</li>
+                    </ul>
+                </div>
+            </main>
+        </div>
+        <!--Registration Form--->
+        <div id="registration">
+            <div class="registration">
+                <h1 align="center">Registration Form</h1>
+                <ul type="none">
+                    <li>
+                <div>
+                    <label>First Name</label>
+                    <input type="text" placeholder="Enter First Name"/>
+                
+                </div> <br>
+                    </li>
+                    <li>
+                <div>
+                    <label>Last Nmae</label>
+                    <input type="text" placeholder="Enter Last Name"/>
+                </div> <br>
+                     </li>
+                     <li>
+                <div>
+                    <label>Email ID</label>
+                    <input type="text" type="number" placeholder="Enter Mail id"/>
+                </div><br/>
+                </li>
+                <li>
+                <div>
+                    <label>Mobile Number</label>
+                    <input type="number" placeholder="Enter mobile number"/>
+                </div><br/>
+                </li>
+                <li>
+                <div>
+                    <label>Gender:</label>
+                    <input type="radio" name="gender" />
+                    <label>Male</label>
+                     
+                    <input type="radio" name="gender" />
+                    <label>Female</label>
+                </div><br/> 
+                </li>
+                <li>
+                <div>
+                    <label>Address</label>
+                    <textarea rows="3" cols="17">
+    
+                    </textarea>
+                </div><br/>
+                </li>
+                </ul>
+                <div>
+                    <button id="btn">Registration</button>
+                </div>
+            </div>
+        </div>
+        <!--About Us-->
+        <div id="About">
+            <div class="about1"><h5>Featured</h5></div>
+            <div class="about2"> <h1>Thanks For Connecting With Us!!</h1></div>
+           <div class="about3"> <h5>All Rights Are Reserved @</h5></div>
+           
+
+
+            
+
+        </div>
+    </main>
+</body>
+</html>
